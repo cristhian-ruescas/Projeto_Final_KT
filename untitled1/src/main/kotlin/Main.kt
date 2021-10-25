@@ -1,19 +1,18 @@
 fun main(args: Array<String>) {
 
-    var diametro : Int
-    var perimetro : Double
-    var pi = 3.14
-    var A: Double? = null
+    val perimetro : Double
+    val pi = 3.14
+    var a: Double? = null
 
 
     print("Digite o diametro: ")
-    diametro = readLine()!!.toDouble().toInt()
+    val diametro : Int = readLine()!!.toInt()
 
 
-    A = 3.14159 * diametro * diametro / 4
-    println("A area do diametro é: " + A)
+    a = pi * diametro * diametro / 4
+    println("A area do diametro é: " + a)
 
-    var r = diametro/2
+    val r = diametro/2
     perimetro = 2 * pi * r
 
     println("O perimetro do diametro é: " + perimetro)
