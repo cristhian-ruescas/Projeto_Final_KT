@@ -6,7 +6,7 @@ class Student(id: String?, name: String?, email: String?, birthDate: Date?) : Pe
     Evaluation {
     private val average = 0.0
 
-    private val courses: List<Course> = ArrayList()
+    private val courses: MutableList<Course> = ArrayList()
     private val approvedCourses: MutableMap<String?, Course?> = HashMap()
 
     val addaluno = hashMapOf<String?, String?>()
